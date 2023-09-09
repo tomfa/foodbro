@@ -38,20 +38,7 @@ export const Chart = () => {
 
   return (
     <div className={'w-10/12 items-center flex-col flex'}>
-      <h2 className="mb-2 text-4xl">{header}</h2>
-      <Line
-        style={{ marginBottom: '14rem' ,marginTop: '4rem'}}
-        data={{
-          labels,
-          datasets: [
-            {
-              data: xData,
-              backgroundColor: "rgb(6, 79, 67)",
-              pointRadius: 10,
-            },
-          ],
-        }}
-      />
+
     <div className={'my-4 align-'}>
       <span className="isolate inline-flex rounded-md shadow-sm">
       <button
@@ -100,6 +87,20 @@ export const Chart = () => {
       </button>
     </span>
     </div>
+      <h2 className="mb-2 text-4xl mt-20">{header}</h2>
+      <Line
+        style={{ marginBottom: '14rem' ,marginTop: '4rem'}}
+        data={{
+          labels,
+          datasets: [
+            {
+              data: xData,
+              backgroundColor: "rgb(6, 79, 67)",
+              pointRadius: 10,
+            },
+          ],
+        }}
+      />
     </div>
 
   )
