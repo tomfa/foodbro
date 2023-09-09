@@ -22,7 +22,7 @@ export const Table = () => {
                       <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">kcal/100g</th>
                       <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">kg co2/kg</th>
                       <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">kr/kg</th>
-                      <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">g/100g</th>
+                      <th scope="col" className="px-3 py-3.5 text-left text-sm font-semibold text-white">% protein</th>
                     </tr>
                     </thead>
                     <tbody className="divide-y divide-gray-800">

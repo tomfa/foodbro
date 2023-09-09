@@ -4,7 +4,7 @@ export type DataPoint = {
   kcal: number;
   co2: number;
   price: number;
-  links: string[];
+  links: any;
 }
 export type DataValue = 'protein' | 'kcal' | 'co2' | 'price';
 export const data: Array<{ id: string, data: DataPoint[ ]}> = [
