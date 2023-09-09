@@ -10,6 +10,7 @@ export type DataValue = 'protein' | 'kcal' | 'co2' | 'price';
 export const data: Array<{ id: string, data: DataPoint[ ]}> = [
   {
     id: 'dairy',
+    // @ts-ignore
     data: [
       {
         label: 'H-melk',
@@ -48,6 +49,7 @@ export const data: Array<{ id: string, data: DataPoint[ ]}> = [
   },
   {
     id: 'Beans',
+    // @ts-ignore
     data: [
       {
         label: 'Kidneybønner (canned)',
@@ -86,6 +88,7 @@ export const data: Array<{ id: string, data: DataPoint[ ]}> = [
   },
   {
     id: 'rawVarer',
+    // @ts-ignore
     data: [
       {
         label: 'Sukker',
@@ -135,6 +138,7 @@ export const data: Array<{ id: string, data: DataPoint[ ]}> = [
   },
   {
     id: 'greens',
+    // @ts-ignore
     data: [
       {
         label: 'Tomat',
@@ -173,6 +177,7 @@ export const data: Array<{ id: string, data: DataPoint[ ]}> = [
   },
   {
     id: 'Meats',
+    // @ts-ignore
     data: [
       {
         label: 'Biff (strimler)',
