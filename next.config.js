@@ -1,8 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: 'export',
-  assetPrefix: '/foodbro/',
-  basePath: '/foodbro'
+  assetPrefix: process.env.NODE_ENV === 'production' && '/foodbro/' || undefined,
+  basePath: process.env.NODE_ENV === 'production' && '/foodbro' || undefined
 }
 
 module.exports = nextConfig
