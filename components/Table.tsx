@@ -2,7 +2,7 @@ import { data } from '@/data'
 
 export const Table = () => {
   return (
-    <div className="bg-gray-900">
+    <div className="bg-gray-900 w-full overflow-x-auto">
       <div className="mx-auto max-w-7xl">
         <div className="bg-gray-900 py-10">
           <div className="px-4 sm:px-6 lg:px-8">

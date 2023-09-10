@@ -87,9 +87,9 @@ export const Chart = () => {
       </button>
     </span>
     </div>
-      <h2 className="mb-2 text-4xl mt-20">{header}</h2>
+      <h2 className="mb-2 text-xl lg:text-4xl mt-20">{header}</h2>
       <Line
-        style={{ marginBottom: '14rem' ,marginTop: '4rem'}}
+        className={'mb-20 mt-10 lg:mb-40 lg:mt-20'}
         data={{
           labels,
           datasets: [
