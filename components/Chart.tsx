@@ -91,8 +91,12 @@ export const Chart = () => {
     </span>
     </div>
       <h2 className="mb-2 text-xl lg:text-4xl mt-20">{header}</h2>
+      <div className={'relative w-full md:h-auto h-screen'}>
       <Line
         className={'mb-20 mt-10 lg:mb-40 lg:mt-20'}
+        options={{
+          maintainAspectRatio: false,
+        }}
         data={{
           labels,
           datasets: [
@@ -105,6 +109,7 @@ export const Chart = () => {
           ],
         }}
       />
+      </div>
     </div>
 
   )
