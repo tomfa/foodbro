@@ -12,6 +12,7 @@ import {
   LineElement,
 } from "chart.js";
 import { Line } from "react-chartjs-2";
+import useWindowDimensions from "@/hooks/useDeviceDimensions";
 
 // Register ChartJS components using ChartJS.register
 ChartJS.register(
@@ -35,6 +36,8 @@ export const Chart = () => {
   const [header, setHeader] = useState<string>('Kcal purchased per kr');
   const labels = useMemo(() => datapoints.map(item => item.label), []);
   const xData = useMemo(() => datapoints.map(item => item[xAxis] / item[yAxis]), [xAxis, yAxis]);
+  const { width } = useWindowDimensions();
+  const isTiny = width < 640;
 
   return (
     <div className={'w-10/12 items-center flex-col flex'}>
@@ -96,7 +99,8 @@ export const Chart = () => {
             {
               data: xData,
               backgroundColor: "rgb(6, 79, 67)",
-              pointRadius: 10,
+              pointRadius: isTiny ? 5: 8,
+              pointHoverRadius: isTiny ? 7 :12,
             },
           ],
         }}
