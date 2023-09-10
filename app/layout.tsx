@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: 'https://github.com/Konfidens/konfidens/assets/1502702/874fc279-b1a3-486b-a673-6d30cd250be4',
+        url: 'https://tomfa.github.io/foodbro/4korn.png',
         width: '1634',
         height: '860',
       }
