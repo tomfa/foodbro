@@ -1,4 +1,5 @@
 import { data } from '@/data'
+import Link from "next/link";
 
 export const Table = () => {
   return (
@@ -9,7 +10,11 @@ export const Table = () => {
             <div className="sm:flex sm:items-center">
               <div className="sm:flex-auto">
                 <h1 className="text-base font-semibold leading-6 text-white">Food</h1>
-                <p className="mt-2 text-sm text-gray-300">A list of all the food.</p>
+                <p className="mt-2 text-sm text-gray-300">
+                  Data table. Based on <Link className={'text-amber-300 hover:text-amber-400'} href={'https://oda.com'}>oda.com</Link> prices, nutritial data from{' '}
+                  <Link className={'text-amber-300 hover:text-amber-400'} href={'https://oda.com'}>oda.com</Link> + <Link className={'text-amber-300 hover:text-amber-400'} href={'https://vetduat.no/'}>vetduat.no</Link>{' '}and climate data from{' '}
+                  <Link className={'text-amber-300 hover:text-amber-400'} href={'https://livelca.com'}>livelca.com</Link> + <Link className={'text-amber-300 hover:text-amber-400'} href={'https://www.framtiden.no/tips/sjekk-hvilken-mat-som-er-best-for-miljoeet'}>framtiden.no</Link>.
+                </p>
               </div>
             </div>
             <div className="mt-8 flow-root">
